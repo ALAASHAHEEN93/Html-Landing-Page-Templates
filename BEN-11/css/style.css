@@ -361,7 +361,7 @@ header.bg-video{
 
 .header-content .m-btn-theme{
   color:white;
-}
+ }
 
 .header-content p {
   font-size: 13px;
@@ -1480,4 +1480,7 @@ section#counter-stats {
     .m-btn {
           line-height: 20px;
     height: 18px;
+}
+    .header-content .m-btn-theme{
+     height: 23px;
 }
