@@ -402,15 +402,12 @@ img {
 .sec-round .full-height {
   height: 100%;
 }
-.sec-round .round-item:first-child {
-  border-left: 1px solid rgba(153, 153, 153, 0.11);
-}
+
 .sec-round .round-item {
   float: left;
   width: 20%;
   height: 100%;
   box-sizing: border-box;
-  border-right: 1px solid rgba(153, 153, 153, 0.11);
   height: 100%;
   position: relative;
 }
@@ -753,7 +750,7 @@ img {
  
 .home-banner-svg{
   position: absolute;
-bottom: 0;
+bottom: -1px;
 width: 100%;
 height: 100px;
 }

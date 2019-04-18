@@ -29,6 +29,7 @@ body {
   -o-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  position:relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -257,6 +258,16 @@ section#counter{
 
 .mb-30 {
   margin-bottom: 30px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 130;
+  display:none;
+  transition: display 0.5s;
 }
 
 /*-----------------------------------------------------------------------------------*/

@@ -10,6 +10,7 @@ $(document).ready(function() {
 
   $(document).on("scroll", onScroll);
 
+
   $('a[href^="#"]').on('click', function(e) {
     e.preventDefault();
     $(document).off("scroll");
@@ -153,6 +154,12 @@ function isInView(elem){
     $('.nav-menu').slideToggle();
   });
 
+  $(".overlay").on("click",function(e,i){
+    $(this).hide();
+    closeNav()
+  })
+
+
   // ========================================================================= //
   //  Typed Js
   // ========================================================================= //
@@ -237,3 +244,15 @@ $(window).load(function(){
   });
 
 });
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  $(document).find(".overlay").show();
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+  $(document).find(".overlay").hide();
+}
